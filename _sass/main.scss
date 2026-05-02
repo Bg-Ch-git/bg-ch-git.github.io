@@ -2,3 +2,86 @@
 @forward 'components';
 @forward 'layout';
 @forward 'pages';
+
+.edu {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.edu-item {
+  display: grid;
+  grid-template-columns: 160px 1fr;
+  align-items: start;
+}
+
+.edu-date {
+  font-weight: 500;
+}
+
+.edu-content {
+  font-weight: 500;
+}
+
+.per {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.per-item {
+  display: grid;
+  grid-template-columns: 160px 1fr;
+  align-items: start;
+}
+
+.per-date {
+  font-weight: 500;
+}
+
+.per-content {
+  font-weight: 500;
+}
+
+.pub {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 30px;
+}
+
+.pub-item {
+  display: grid;
+  grid-template-columns: 40px 1fr;
+  align-items: start;
+  column-gap: 10px;
+}
+
+.pub-date {
+  font-weight: 500;
+  text-align: right;
+}
+
+.pub-content {
+  font-weight: 500;
+}
+
+.edu-s {
+  display: none;
+  flex-direction: column;
+  gap: 12px;
+}
+
+@media (max-width: 600px) {
+  .edu {
+    display: none;
+  }
+
+  .edu-s {
+    display: flex;
+  }
+
+  .edu-item {
+    grid-template-columns: 50px 1fr;
+  }
+}

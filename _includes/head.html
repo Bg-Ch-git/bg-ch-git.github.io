@@ -59,10 +59,10 @@
     {%- unless page.layout == 'home' -%}
       {%- capture title -%}
         {%- if page.collection == 'tabs' -%}
-          {%- assign tab_key = page.title | downcase -%}
+          {%- assign tab_key = page.simple-title | default: page.title | downcase -%}
           {{- site.data.locales[include.lang].tabs[tab_key] -}}
         {%- else -%}
-          {{- page.title -}}
+          {{- page.simple-title | default: page.title -}}
         {%- endif -%}
       {%- endcapture -%}
       {{- title | append: ' | ' -}}

@@ -62,6 +62,20 @@
           {%- capture url -%}
             https://{{ entry.type }}.com/{{ site[entry.type].username }}
           {%- endcapture -%}
+        {% when 'telegram' %}
+          {%- unless site[entry.type].username -%}
+            {%- continue -%}
+          {%- endunless -%}
+          {%- capture url -%}
+            https://t.me/{{ site[entry.type].username }}
+          {%- endcapture -%}
+        {% when 'you-tube' %}
+          {%- unless site[entry.type].username -%}
+            {%- continue -%}
+          {%- endunless -%}
+          {%- capture url -%}
+            https://www.youtube.com/@{{ site[entry.type].username }}
+          {%- endcapture -%}
         {% when 'email' %}
           {%- unless site.social.email -%}
             {%- continue -%}
