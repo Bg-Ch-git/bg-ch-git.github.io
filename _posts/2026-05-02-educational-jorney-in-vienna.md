@@ -88,17 +88,17 @@ For now, it looks like this.
 ```mermaid
 gantt
     title My University Progress
-    dateFormat  YYYY-MM
-    axisFormat %Y-%m
+    dateFormat  YY-MM
+    axisFormat %y-%m
 
     section Bioinf
-    Exams   : active, bio1, 2024-10, 34M
-    Project           : bio2, 2026-10, 4M
+    Exams   : active, bio1, 24-10, 34M
+    Project           : bio2, 26-08, 6M
     Thesis            : after bio2, 6M
 
     section Math
-    Exams   : active, math1, 2025-03, 19M
-    Seminars : active, math2, 2025-10, 9M
+    Exams   : active, math1, 25-03, 19M
+    Seminars : active, math2, 25-10, 9M
     Thesis            : after math2, 6M
 ```
 
