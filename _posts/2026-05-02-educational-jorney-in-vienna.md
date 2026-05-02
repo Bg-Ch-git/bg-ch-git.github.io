@@ -89,15 +89,16 @@ For now, it looks like this.
 gantt
     title My University Progress
     dateFormat  YYYY-MM
+    axisFormat %Y-%m
 
-    section Bioinformatics
-    Courses & Exams   : active, bio1, 2024-10, 34M
+    section Bioinf
+    Exams   : active, bio1, 2024-10, 34M
     Project           : bio2, 2026-10, 4M
     Thesis            : after bio2, 6M
 
-    section Mathematics
-    Courses & Exams   : active, math1, 2025-03, 19M
-    Research Seminars : active, math2, 2025-10, 9M
+    section Math
+    Exams   : active, math1, 2025-03, 19M
+    Seminars : active, math2, 2025-10, 9M
     Thesis            : after math2, 6M
 ```
 
