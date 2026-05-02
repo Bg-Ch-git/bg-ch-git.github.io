@@ -1,3 +1,7 @@
+/**
+ * Table with comments
+ */
+
 export function interactiveTable() {
   document.addEventListener('DOMContentLoaded', function () {
     const wrappers = document.querySelectorAll('.course-table-wrapper');
