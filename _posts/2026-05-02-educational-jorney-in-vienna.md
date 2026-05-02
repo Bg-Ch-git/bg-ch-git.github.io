@@ -90,6 +90,7 @@ gantt
     title My University Progress
     dateFormat  YY-MM
     axisFormat %y-%m
+    tickInterval 6month
 
     section Bioinf
     Exams   : active, bio1, 24-10, 34M
