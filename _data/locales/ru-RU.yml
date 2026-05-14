@@ -1,6 +1,10 @@
 # The layout text of site
-
+title: Б. Ч.
+tagline: Один большой симулякр
 # ----- Commons label -----
+
+social:
+  name: Богдан Чужинов
 
 layout:
   post: Пост
@@ -12,9 +16,23 @@ tabs:
   # format: <filename_without_extension>: <value>
   home: Главная
   categories: Категории
+  categories.RU: Категории
+  категории: Категории
   tags: Теги
+  tags.RU: Теги
+  теги: Теги
   archives: Архив
+  archives.RU: Архив
+  архив: Архив
   about: О сайте
+  about.RU: О сайте
+  о сайте: О сайте
+  cv: CV
+  cv.RU: CV
+
+tags:
+  зодумался:
+    - hermeneutics-of-love
 
 # the text displayed in the search bar & search results
 search:

@@ -11,8 +11,8 @@
       {%- endif -%}
     </a>
 
-    <a class="site-title d-block" href="{{ '/' | relative_url }}">{{ site.title }}</a>
-    <p class="site-subtitle fst-italic mb-0">{{ site.tagline }}</p>
+    <a class="site-title d-block" href="{{ '/' | relative_url }}">{{ site.data.locales[include.lang].title }}</a>
+    <p class="site-subtitle fst-italic mb-0">{{ site.data.locales[include.lang].tagline }}</p>
   </header>
   <!-- .profile-wrapper -->
 
@@ -20,25 +20,50 @@
     <ul class="nav">
       <!-- home -->
       <li class="nav-item{% if page.layout == 'home' %}{{ " active" }}{% endif %}">
-        <a href="{{ '/' | relative_url }}" class="nav-link">
+        {% if include.lang == 'ru-RU' %}
+          {% assign rel_url = '/ru' %}
+        {% else %}
+          {% assign rel_url = '/' %}
+        {% endif %}
+        <a href="{{ rel_url | relative_url }}" class="nav-link">
           <i class="fa-fw fas fa-home"></i>
           <span>{{ site.data.locales[include.lang].tabs.home | upcase }}</span>
         </a>
       </li>
       <!-- the real tabs -->
       {% for tab in site.tabs %}
-        <li class="nav-item{% if tab.url == page.url %}{{ " active" }}{% endif %}">
-          <a href="{{ tab.url | relative_url }}" class="nav-link">
-            <i class="fa-fw {{ tab.icon }}"></i>
-            {% capture tab_name %}{{ tab.url | split: '/' }}{% endcapture %}
+        {% if tab.url contains 'RU' %}
+          {% assign tab_lang = 'ru-RU' %}
+        {% else %}
+          {% assign tab_lang = 'en' %}
+        {% endif %}
+        {% if include.lang == tab_lang %}
+          <li class="nav-item{% if tab.url == page.url %}{{ " active" }}{% endif %}">
+            <a href="{{ tab.url | relative_url }}" class="nav-link">
+              <i class="fa-fw {{ tab.icon }}"></i>
+              {% capture tab_name %}{{ tab.url | split: '/' }}{% endcapture %}
 
-            <span>{{ site.data.locales[include.lang].tabs.[tab_name] | default: tab.title | upcase }}</span>
-          </a>
-        </li>
+              <span>{{ site.data.locales[include.lang].tabs.[tab_name] | default: tab.title | upcase }}</span>
+            </a>
+          </li>
+        {% endif %}
         <!-- .nav-item -->
       {% endfor %}
     </ul>
   </nav>
+
+  {% if page.layout == 'home' %}
+    <div class="lang-switcher w-100 ps-0">
+      {% for local in site.languages %}
+        <a
+          href="{{ local.url | relative_url }}"
+          class="{% if include.lang == local.lang %}active{% endif %}"
+        >
+          {{ local['name-lang'] }}
+        </a>
+      {% endfor %}
+    </div>
+  {% endif %}
 
   <div class="sidebar-bottom d-flex flex-wrap  align-items-center w-100">
     {% unless site.theme_mode %}

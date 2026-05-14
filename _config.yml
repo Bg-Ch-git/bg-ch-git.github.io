@@ -8,6 +8,14 @@ theme: jekyll-theme-chirpy
 # otherwise, the layout language will use the default value of 'en'.
 lang: en
 
+languages:
+  - url: /
+    lang: en
+    name-lang: English
+  - url: /ru
+    lang: ru-RU
+    name-lang: Русский
+
 # Change to your timezone › https://zones.arilyn.cc
 timezone: Europe/Vienna
 
@@ -16,7 +24,7 @@ timezone: Europe/Vienna
 
 title: Bg. Ch. # the main title
 
-tagline: Mathematician # it will display as the subtitle
+tagline: Just a big Simulacrum # it will display as the subtitle
 
 description: >- # used by seo meta and the atom feed
   Bogdan Chuzhinov's personal site.

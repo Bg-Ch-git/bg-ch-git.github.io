@@ -16,21 +16,30 @@
         {% for item in paths %}
           {% if forloop.first %}
             <span>
-              <a href="{{ '/' | relative_url }}">
+              {% assign url = '/' %}
+              {% if lang == 'ru-RU' %}
+                {% assign url = '/ru' %}
+              {% endif %}
+              <a href="{{ url | relative_url }}">
                 {{- site.data.locales[include.lang].tabs.home | capitalize -}}
               </a>
             </span>
 
           {% elsif forloop.last %}
             {% if page.collection == 'tabs' %}
-              <span>{{ site.data.locales[include.lang].tabs[item] | default: page.title }}</span>
+              <span>
+                {{- site.data.locales[include.lang].tabs[item] | default: page['nav-title'] | default: page.title -}}
+              </span>
             {% else %}
-              <span>{{ page.title }}</span>
+              <span>{{ page['nav-title'] | default: page.title }}</span>
             {% endif %}
-
-          {% elsif page.layout == 'category' or page.layout == 'tag' %}
+          {% elsif page.layout == 'category' or page.layout == 'tag' or item == 'categories' or item == 'tags' %}
             <span>
-              <a href="{{ item | append: '/' | relative_url }}">
+              {% assign url = '/' %}
+              {% if lang == 'ru-RU' %}
+                {% assign url = '.RU/' %}
+              {% endif %}
+              <a href="{{ item | append: url | relative_url }}">
                 {{- site.data.locales[include.lang].tabs[item] | default: page.title -}}
               </a>
             </span>

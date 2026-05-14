@@ -1,6 +1,10 @@
 # The layout text of site
-
+title: Bg. Ch.
+tagline: Just a big Simulacrum
 # ----- Commons label -----
+
+social:
+  name: Bogdan Chuzhinov
 
 layout:
   post: Post
@@ -12,10 +16,26 @@ tabs:
   # format: <filename_without_extension>: <value>
   home: Home
   categories: Categories
+  categories.RU: Категории
+  категории: Категории
   tags: Tags
+  tags.RU: Теги
+  теги: Теги
   archives: Archives
+  archives.RU: Архив
+  архив: Архив
   about: About
+  about.RU: О сайте
+  о сайте: О сайте
   cv: CV
+  cv.RU: CV
+
+tags:
+  my-life:
+    - 2026-08-03-me-on-25
+
+  university:
+    - education-in-vienna
 
 # the text displayed in the search bar & search results
 search:

@@ -5,7 +5,8 @@ description: The answer to the question of why I'm still unemployed. This will b
 date: 2026-05-02 12:00:00 +0200
 # last_modified_at: 2025-05-25 12:00:00 +0200
 categories: [Me and The World, Education]
-tags: [university, my life]
+tags: [university, my-life]
+lang: en
 pin: true
 math: true
 mermaid: true
@@ -301,6 +302,7 @@ My current course progress and overall impressions are summarized in the table b
           </div>
         </td>
         <td colspan="2">
+          <a href="/assets/posts/my-uni-wien/MDGen.pdf" target="_blank">🎓 Presentation</a>,<br>
           <a href="/assets/posts/my-uni-wien/SemOpt.pdf" target="_blank">🎓 Seminar Work</a>
         </td>
       </tr>

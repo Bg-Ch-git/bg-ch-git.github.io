@@ -5,7 +5,7 @@
 {% assign size_list = '' | split: '' %}
 {% assign tag_list = '' | split: '' %}
 
-{% for tag in site.tags %}
+{% for tag in site.data.locales[include.lang].tags %}
   {% assign size = tag | last | size %}
   {% assign size_list = size_list | push: size %}
 
@@ -39,6 +39,9 @@
     <div class="d-flex flex-wrap mt-3 mb-1 me-3">
       {% for tag_name in trending_tags %}
         {% assign url = tag_name | slugify | url_encode | prepend: '/tags/' | append: '/' %}
+        {% if lang == 'ru-RU' %}
+          {% capture url %}/ru/tags/{{ tag_name | slugify | url_encode }}/{% endcapture %}
+        {% endif %}
         <a class="post-tag btn btn-outline-primary" href="{{ url | relative_url }}">{{ tag_name }}</a>
       {% endfor %}
     </div>

@@ -4,7 +4,7 @@
   {% assign previous = site.data.locales[include.lang].post.button.previous %}
   {% assign next = site.data.locales[include.lang].post.button.next %}
 
-  {% if page.previous.url %}
+  {% if page.previous.url and page.previous.lang == page.lang %}
     <a
       href="{{ site.baseurl }}{{ page.previous.url }}"
       class="btn btn-outline-primary"
@@ -18,7 +18,7 @@
     </div>
   {% endif %}
 
-  {% if page.next.url %}
+  {% if page.next.url and page.next.lang == page.lang %}
     <a
       href="{{ site.baseurl }}{{page.next.url}}"
       class="btn btn-outline-primary"

@@ -67,7 +67,7 @@
       {%- endcapture -%}
       {{- title | append: ' | ' -}}
     {%- endunless -%}
-    {{- site.title -}}
+    {{- site.data.locales[include.lang].title -}}
   </title>
 
   {% include_cached favicons.html %}
