@@ -2,7 +2,7 @@
 title: Educational Jorney in Vienna
 simple-title: Edu-Vienna
 description: The answer to the question of why I'm still unemployed. This will be updated as time goes on. I hope...
-date: 2027-05-02 12:00:00 +0200
+date: 2026-05-02 12:00:00 +0200
 # last_modified_at: 2025-05-25 12:00:00 +0200
 categories: [Me and The World, Education]
 tags: [university, my-life]
