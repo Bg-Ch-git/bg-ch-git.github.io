@@ -25,3 +25,41 @@
     font-weight: 700;
   }
 }
+
+.epigraph {
+  width: fit-content;
+  max-width: 72%;
+  margin: 2rem 0 3rem auto;
+
+  text-align: left; // ← главное изменение
+  line-height: 1.8;
+  color: var(--text-muted-color);
+  font-size: 1rem;
+
+  hyphens: auto;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+}
+
+.epigraph-author {
+  margin-top: 1rem;
+  text-align: right; // автора можно оставить справа
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+.custom-h2 {
+  text-align: center;
+}
+
+.custom-h2-like-h4 {
+  font-size: medium;
+}
+
+.page-number {
+  float: left;
+  margin-left: -2rem;
+  color: #888;
+  font-size: 0.9rem;
+  font-family: serif;
+}

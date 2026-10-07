@@ -1,0 +1,35 @@
+---
+layout: null
+permalink: /zotero/
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Opening Zotero…</title>
+  </head>
+
+  <body>
+    <p>Opening Zotero…</p>
+
+    <script>
+      const params = new URLSearchParams(window.location.search);
+      const collection = params.get('collection');
+
+      if (collection && /^[A-Z0-9]{8}$/i.test(collection)) {
+        const zoteroUrl = `zotero://select/library/collections/${collection}`;
+
+        // Open Zotero
+        window.location.href = zoteroUrl;
+
+        // Then return this browser tab to the homepage
+        setTimeout(() => {
+          window.location.replace('/');
+        }, 1000);
+      } else {
+        // Invalid URL → homepage
+        window.location.replace('/');
+      }
+    </script>
+  </body>
+</html>

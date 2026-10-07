@@ -8,7 +8,6 @@ tail_includes:
 script_includes:
   - comment
 ---
-
 {% include lang.html %}
 
 {% include toc-status.html %}
@@ -125,13 +124,17 @@ script_includes:
     {{ content }}
   </div>
 
+  {% assign url = site.baseurl %}
+  {% if lang == 'ru-RU' %}
+    {% assign url = '/ru' %}
+  {% endif %}
   <div class="post-tail-wrapper text-muted">
     <!-- categories -->
     {% if page.categories.size > 0 %}
       <div class="post-meta mb-3">
         <i class="far fa-folder-open fa-fw me-1"></i>
         {% for category in page.categories %}
-          <a href="{{ site.baseurl }}/categories/{{ category | slugify | url_encode }}/">{{ category }}</a>
+          <a href="{{ url }}/categories/{{ category | slugify | url_encode }}/">{{ category }}</a>
           {%- unless forloop.last -%},{%- endunless -%}
         {% endfor %}
       </div>
@@ -143,7 +146,7 @@ script_includes:
         <i class="fa fa-tags fa-fw me-1"></i>
         {% for tag in page.tags %}
           <a
-            href="{{ site.baseurl }}/tags/{{ tag | slugify | url_encode }}/"
+            href="{{ url }}/tags/{{ tag | slugify | url_encode }}/"
             class="post-tag no-text-decoration"
           >
             {{- tag -}}

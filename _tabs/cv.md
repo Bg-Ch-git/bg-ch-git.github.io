@@ -70,7 +70,7 @@ order: 5
     <div class="edu-date">09/2021–07/2023</div>
     <div class="edu-content">
       Novosibirsk State University, Faculty of Mechanics and Mathematics, Russia<br>
-      Degree: <b>Magister</b> in <i>Mathematics</i><br>
+      Degree: <b>Magister</b> in <i>Mathematics</i> (with distinction)<br>
       Specialization: <i>Geometry and Topology</i><br>
       Grade: 5 (best)<br>
     </div>
@@ -80,7 +80,7 @@ order: 5
     <div class="edu-date">09/2018–07/2021</div>
     <div class="edu-content">
       Novosibirsk State University, Faculty of Mechanics and Mathematics, Russia<br>
-      Degree: <b>Bachelor</b> in <i>Mathematics</i><br>
+      Degree: <b>Bachelor</b> in <i>Mathematics</i> (with distinction)<br>
       Grade: 4.95<br>
     </div>
   </div>

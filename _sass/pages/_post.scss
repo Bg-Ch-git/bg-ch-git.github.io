@@ -280,7 +280,13 @@ header {
     .toc-link {
       display: block;
 
-      @extend %text-ellipsis;
+      /* @extend %text-ellipsis; */
+
+      /* overflow-wrap: break-word; */
+      white-space: normal;
+      hyphens: auto;
+      -webkit-hyphens: auto;
+      -ms-hyphens: auto;
 
       &:hover {
         color: var(--toc-highlight);

@@ -2,17 +2,18 @@
 # the default layout is 'page'
 title: Curriculum Vitæ
 simple-title: CV
+lang: ru-RU
 icon: fas fa-file
 order: 5
 ---
 
-## Personal Data
+## Персональные Данные
 
 <div class="per">
   <div class="per-item">
-    <div class="per-date">Name:</div>
+    <div class="per-date">Имя:</div>
     <div class="per-content">
-      Bogdan Chuzhinov
+      Богдан Бахтиярович Чужинов
     </div>
   </div>
 
@@ -24,94 +25,94 @@ order: 5
   </div>
 
   <div class="per-item">
-    <div class="per-date">Date of birth:</div>
+    <div class="per-date">Дата рождения:</div>
     <div class="per-content">
-      3 August 2000
+      3 августа 2000
     </div>
   </div>
 
   <div class="per-item">
-    <div class="per-date">Place of birth:</div>
+    <div class="per-date">Место рождения:</div>
     <div class="per-content">
-      Zyrianovsk, Kazakhstan
+      город Зыряновск, Казахстан
     </div>
   </div>
 </div>
 
-## Education
+## Образование
 
 <div class="edu">
   <div class="edu-item">
-    <div class="edu-date">10/2024-present</div>
+    <div class="edu-date">10/2024-наст.время</div>
     <div class="edu-content">
-      University of Vienna, Faculty of Computer Science<br>
-      Master program <i>Bioinformatics</i>
+      Университет Вены, Факультет Компьютерных Наук<br>
+      Магистерская программа <i>Биоинформатика</i>
     </div>
   </div>
 
   <div class="edu-item">
-    <div class="edu-date">03/2025-present</div>
+    <div class="edu-date">03/2025-наст.время</div>
     <div class="edu-content">
-      University of Vienna, Faculty of Mathematics<br>
-      Master program <i>Mathematics</i><br>
-      Specialization: <i>Applied Mathematics and Scientific Computing</i>
+      Университет Вены, Факультет Математики<br>
+      Магистерская программа <i>Математика</i><br>
+      Специализация: <i>Оптимизация</i>
     </div>
   </div>
 
   <div class="edu-item">
     <div class="edu-date">09/2022–05/2025</div>
     <div class="edu-content">
-      Yandex School of Data Analysis, Russia<br>
-      Professional Diploma <i>Data Scientist</i>
+      Школа Анализа Данных, Россия<br>
+      Диплом о профессиональной переподготовке <i>Data Scientist</i>
     </div>
   </div>
 
   <div class="edu-item">
     <div class="edu-date">09/2021–07/2023</div>
     <div class="edu-content">
-      Novosibirsk State University, Faculty of Mechanics and Mathematics, Russia<br>
-      Degree: <b>Magister</b> in <i>Mathematics</i><br>
-      Specialization: <i>Geometry and Topology</i><br>
-      Grade: 5 (best)<br>
+      Новосибирский Государственный Университет, Механико-Математический Факультет<br>
+      Степень: <b>Магистр</b> <i>Математики</i> (с отличием)<br>
+      Специализация: <i>Геометрия и Топология</i><br>
+      Средний балл диплома: 5.0<br>
     </div>
   </div>
 
   <div class="edu-item">
     <div class="edu-date">09/2018–07/2021</div>
     <div class="edu-content">
-      Novosibirsk State University, Faculty of Mechanics and Mathematics, Russia<br>
-      Degree: <b>Bachelor</b> in <i>Mathematics</i><br>
-      Grade: 4.95<br>
+      Новосибирский Государственный Университет, Механико-Математический Факультет<br>
+      Степень: <b>Бакалавр</b> <i>Математики</i> (с отличием)<br>
+      Средний балл диплома: 4.95<br>
     </div>
   </div>
 
   <div class="edu-item">
     <div class="edu-date">09/2017–08/2018</div>
     <div class="edu-content">
-      Tomsk State University, Faculty of Mechanics and Mathematics, Russia<br>
-      Student of the bachelor program <i>Mathematics</i>
+      Томский Государственный Университет, Механико-Математический Факультет<br>
+      Студент бакалавриата по программе <i>Математика</i>
     </div>
   </div>
 
   <div class="edu-item">
     <div class="edu-date">09/2010–06/2017</div>
     <div class="edu-content">
-      Lyceum, Zyrianovsk, Kazakhstan
+      физ.-мат. Лицей, Зыряновск, Казахстан
     </div>
   </div>
 
   <div class="edu-item">
     <div class="edu-date">10/2009–07/2017</div>
     <div class="edu-content">
-      Mussorgsky Children’s Music School, Zyrianovsk, Kazakhstan<br>
-      Piano department
+      Десткая Музыкальная Школа им. Мусоргского, Зыряновск, Казахстан<br>
+      Отделение фортепиано
     </div>
   </div>
 
   <div class="edu-item">
     <div class="edu-date">09/2006–06/2010</div>
     <div class="edu-content">
-      School Nr. 1, Zyrianovsk, Kazakhstan
+      Начальная Школа №1, Зыряновск, Казахстан
     </div>
   </div>
 </div>
@@ -120,31 +121,31 @@ order: 5
   <div class="edu-item">
     <div class="edu-date">2025</div>
     <div class="edu-content">
-      Yandex School of Data Analysis, Russia<br>
-      Professional Diploma <i>Data Scientist</i>
+      Школа Анализа Данных, Россия<br>
+      Диплом о профессиональной переподготовке <i>Data Scientist</i>
     </div>
   </div>
 
   <div class="edu-item">
     <div class="edu-date">2023</div>
     <div class="edu-content">
-      Novosibirsk State University, Russia<br>
-      <b>Magister</b> in <i>Mathematics</i>
+      Новосибирский Государственный Университет<br>
+      <b>Магистр</b> <i>Математики</i>
     </div>
   </div>
 
   <div class="edu-item">
     <div class="edu-date">2021</div>
     <div class="edu-content">
-      Novosibirsk State University, Russia<br>
-      <b>Bachelor</b> in <i>Mathematics</i>
+      Новосибирский Государственный Университет<br>
+      <b>Бакалавр</b> <i>Математики</i>
     </div>
   </div>
 </div>
 
-## Publications
+## Публикации
 
-### University Works
+### Университетские Работы
 
 <div class="pub">
 
@@ -156,7 +157,7 @@ order: 5
   </div>
 </div>
 
-### Articles
+### Журнальные Статьи
 
 <div class="pub">
   <div class="pub-item">

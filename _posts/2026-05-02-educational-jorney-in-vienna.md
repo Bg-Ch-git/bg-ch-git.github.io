@@ -2,7 +2,7 @@
 title: Educational Jorney in Vienna
 simple-title: Edu-Vienna
 description: The answer to the question of why I'm still unemployed. This will be updated as time goes on. I hope...
-date: 2026-05-02 12:00:00 +0200
+date: 2027-05-02 12:00:00 +0200
 # last_modified_at: 2025-05-25 12:00:00 +0200
 categories: [Me and The World, Education]
 tags: [university, my-life]
@@ -10,6 +10,7 @@ lang: en
 pin: true
 math: true
 mermaid: true
+comments: false
 media_subpath: /assets/posts/my-uni-wien/
 image:
   path: main-building-1.jpg
@@ -99,12 +100,12 @@ gantt
     Thesis            : after bio2, 6M
 
     section Math
-    Exams   : active, math1, 25-03, 19M
+    Exams   : active, math1, 25-03, 24M
     Seminars : active, math2, 25-10, 9M
-    Thesis            : after math2, 6M
+    Thesis            : after math2, 8M
 ```
 
-I really want to finish both master’s programs for two reasons. Firstly, I simply find them interesting. Secondly, it seems to me that many *gebildete Personen* in Austria have more than one degree, and since I want to integrate into that part of Austrian society, I need to work harder than the average student.
+I really want to finish both master’s programs for two reasons. Firstly, I simply find them interesting. Secondly, it seems to me that many *gebildete Personen* in Austria have more than one degree, and since I want to integrate into that part of Austrian society, I need to work harder than the average student. I understand that it's a stupid reason but who cares :)
 
 
 ## Master Mathematics
@@ -113,18 +114,14 @@ My primary interest lies in applied mathematics. I devote most of my time and ef
 
 ```mermaid
 mindmap
-  root(Applied mathematics and scientific computing<br/>120 ECTS)
-    Core Modules<br/>30 ECTS
-      Numerical Analysis<br/>10 ECTS
-      Optimization<br/>6 ECTS
-      Applied Analysis<br/>6 ECTS
-      Research Seminars<br/>8 ECTS
-    Specialized Electives<br/>21 ECTS
-    Interdisciplinary Modules<br/>24 ECTS
-      Geometry and Topology<br/>8 ECTS
-      Analysis<br/>6 ECTS
-      Stochastics<br/>4 ECTS
-    Further Electives<br/>15 ECTS
+  root(Master Mathematics<br/>120 ECTS)
+    Core Module<br/>30 ECTS
+      Stochastic Processes<br/>10 ECTS
+      Optimization<br/>10 ECTS
+      Harmonic Analysis<br/>10 ECTS
+    Specialization Module<br/>30 ECTS
+    Seminars<br/>8 ECTS
+    Electives<br/>22 ECTS
     Master Thesis<br/>27 ECTS
     Defensio<br/>3 ECTS
 ```
@@ -149,13 +146,6 @@ My current course progress and overall impressions are summarized in the table b
         <td style="width: 100px; text-align: center;">7</td>
         <td style="width: 100px; text-align: center;">1</td>
       </tr>
-      <tr></tr>
-      <tr class="course-row" data-id="m1">
-        <td style="color: transparent;">Advanced Numerical Analysis</td>
-        <td style="text-align: center;">PS</td>
-        <td style="text-align: center;">4</td>
-        <td class="course-status-progress">In progress</td>
-      </tr>
       <tr class="course-details" data-id="m1">
         <td colspan="2">
           <div class="per">
@@ -166,21 +156,15 @@ My current course progress and overall impressions are summarized in the table b
               </div>
             </div>
             <div class="per-item">
-              <div class="per-date">Tutor:</div>
-              <div class="per-content">
-                Dr. Enrico Zampa
-              </div>
-            </div>
-            <div class="per-item">
               <div class="per-date">Semester:</div>
               <div class="per-content">
-                PS in 2026S, VO in 2025S
+                2025S
               </div>
             </div>
             <div class="per-item">
               <div class="per-date">Description:</div>
               <div class="per-content">
-                <a href="https://ufind.univie.ac.at/de/course.html?lv=250071&semester=2026S" target="_blank">📖 u:find PS</a>, <a href="https://ufind.univie.ac.at/de/course.html?lv=250078&semester=2025S" target="_blank">📖 u:find VO</a>
+                <a href="https://ufind.univie.ac.at/de/course.html?lv=250078&semester=2025S" target="_blank">📖 u:find</a>
               </div>
             </div>
           </div>
@@ -232,43 +216,6 @@ My current course progress and overall impressions are summarized in the table b
         </td>
         <td colspan="2">
           <a href="/assets/posts/my-uni-wien/NonLinOpt.pdf" target="_blank">🧾 Lecture Notes</a>
-        </td>
-      </tr>
-      <!-- Applied Analysis -->
-      <tr class="course-row" data-id="m3">
-        <td>Applied Analysis</td>
-        <td style="text-align: center;">VO</td>
-        <td style="text-align: center;">6</td>
-        <td class="course-status-progress">In Progress</td>
-      </tr>
-      <tr class="course-details" data-id="m3">
-        <td colspan="2">
-          <div class="per">
-            <div class="per-item">
-              <div class="per-date">Lecturers:</div>
-              <div class="per-content">
-                Priv.-Doz. Dr. Monika Dörfler,<br>
-                Univ.-Prof. Dr. Norbert Mauser,<br>
-                Dr. Hans Peter Stimming
-              </div>
-            </div>
-            <div class="per-item">
-              <div class="per-date">Semester:</div>
-              <div class="per-content">
-                2025W
-              </div>
-            </div>
-            <div class="per-item">
-              <div class="per-date">Description:</div>
-              <div class="per-content">
-                <a href="https://ufind.univie.ac.at/de/course.html?lv=250009&semester=2025W" target="_blank">📖 u:find</a>
-              </div>
-            </div>
-          </div>
-        </td>
-        <td colspan="2">
-          <a href="/assets/posts/my-uni-wien/AppAnP1.pdf" target="_blank">🧾 Lecture Notes: Part 1</a>,<br>
-          <a href="/assets/posts/my-uni-wien/AppAnP2.pdf" target="_blank">🧾 Lecture Notes: Part 2</a>
         </td>
       </tr>
       <!-- Optimization Seminar -->
@@ -543,7 +490,7 @@ My current course progress and overall impressions are summarized in the table b
 
   <!-- DESCRIPTIONS -->
   <!-- Advanced Numerical Analysis -->
-  <div class="course-details-d" data-id="TODO">
+  <div class="course-details-d" data-id="m1">
     <div class="side-panel-d">
       <div style="overflow-x: visible !important;">TODO</div>
     </div>
@@ -555,12 +502,6 @@ My current course progress and overall impressions are summarized in the table b
       </p>
       <p>Ms. Schindler was very understanding toward me. Because of stomach issues, I missed a number of seminars, and she agreed to let me complete them individually. And honestly, besides being very smart, she’s also really charming. Yeah, that sounds a bit cringe, but it’s true!
       </p>
-    </div>
-  </div>
-  <!-- Applied Analysis -->
-  <div class="course-details-d" data-id="TODO">
-    <div class="side-panel-d">
-      TODO
     </div>
   </div>
   <!-- Seminar Optimization -->
