@@ -1,0 +1,54 @@
+---
+layout: null
+permalink: /obsidian/
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opening Obsidian...</title>
+  </head>
+
+  <body>
+    <p id="status">Opening Obsidian...</p>
+    <p id="fallback"></p>
+
+    <script>
+      const params = new URLSearchParams(window.location.search);
+
+      const vault = params.get('vault');
+      const file = params.get('file');
+
+      // Homepage (works with Jekyll baseurl)
+      const homeUrl = "{{ '/' | relative_url }}";
+
+      if (vault && file) {
+        // Encode spaces as %20 instead of +
+        const obsidianUrl = 'obsidian://open?vault=' + encodeURIComponent(vault) + '&file=' + encodeURIComponent(file);
+
+        // Fallback link
+        const link = document.createElement('a');
+        link.href = obsidianUrl;
+        link.textContent = 'Open in Obsidian';
+
+        document.getElementById('fallback').appendChild(link);
+
+        // Open Obsidian
+        window.location.href = obsidianUrl;
+
+        // Redirect browser to homepage after 1 second
+        setTimeout(() => {
+          window.location.replace(homeUrl);
+        }, 1000);
+      } else {
+        document.getElementById('status').textContent = 'Invalid Obsidian link. Redirecting...';
+
+        setTimeout(() => {
+          window.location.replace(homeUrl);
+        }, 1000);
+      }
+    </script>
+  </body>
+</html>
